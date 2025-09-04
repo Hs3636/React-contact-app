@@ -14,6 +14,7 @@ import { store } from './app/store';
 import HomeIndex from './components/HomeIndex';
 import ErrorPage from './components/ErrorPage';
 import Layout from './routes/Layout';
+import { Navigate } from 'react-router-dom';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route element={<Layout />}>
