@@ -17,6 +17,7 @@ import Layout from './routes/Layout';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route element={<Layout />}>
+      <Route path="/" element={<Navigate to="/sign-up" replace />} />
       <Route element={<Protected />}>
         <Route path='/home' element={<Home />}>
           <Route path='all' element={<HomeIndex />}/>
